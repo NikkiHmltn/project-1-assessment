@@ -6,6 +6,11 @@ let plus = document.querySelector('#plus')
 plus.addEventListener('click', function(){
     let result = parseInt(infoArea.textContent) + parseInt(inputForm.value)
     document.getElementById('info').textContent = result
+    if (result < 0) {
+        infoArea.style.color = "red";
+    } else if (result > 0) {
+        infoArea.style.color = "black";
+    }
 })
 
 minus.addEventListener('click', function(){
