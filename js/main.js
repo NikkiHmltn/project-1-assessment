@@ -14,5 +14,7 @@ minus.addEventListener('click', function(){
 
     if (result < 0) {
         infoArea.style.color = "red";
+    } else if (result > 0) {
+        infoArea.style.color = "black";
     }
 })
